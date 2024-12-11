@@ -4,6 +4,8 @@
 
 This project implements a TypeScript monorepo using Yarn, which contains a Lambda function that responds to an HTTP request with a greeting message. The Lambda function returns a personalized message based on a query parameter. If the query parameter is not provided, it returns a default greeting. This solution also includes linting, testing, Swagger/OpenAPI documentation, and deployment to AWS.
 
+---
+
 ## Requirements
 
 ### 1. Monorepo Setup
@@ -62,7 +64,6 @@ This project implements a TypeScript monorepo using Yarn, which contains a Lambd
   /package.json       # Monorepo dependencies
   /yarn.lock          # Yarn lock file
   /README.md          # Read-me file
-
 ```
 
 ---
@@ -119,9 +120,11 @@ To work with the `lambda-function` package:
   This compiles the TypeScript code into JavaScript for deployment.
 
 - **Start the Function Locally**
+
   ```bash
   yarn start
   ```
+
   This runs the Lambda function locally for testing purposes.
 
 ### 2. Infrastructure
@@ -129,9 +132,11 @@ To work with the `lambda-function` package:
 To deploy the Lambda function and related infrastructure to AWS:
 
 - **Deploy with AWS CDK**
+
   ```bash
   cdk deploy
   ```
+
   This deploys the Lambda function, API Gateway, and other resources to AWS. After deployment, the API Gateway URL will be provided for testing.
 
 ---
@@ -139,6 +144,40 @@ To deploy the Lambda function and related infrastructure to AWS:
 ## API Documentation
 
 API documentation is generated using OpenAPI/Swagger. Use the following endpoints:
+
+### Local Testing Endpoints:
+
+- **Test the API:**
+
+  ```
+  http://localhost:3000/hello?name=John
+  ```
+
+  This will respond with `Hello, John`.
+
+  ```
+  http://localhost:3000/hello
+  ```
+
+  This will respond with `Hello, World`.
+
+- **Swagger UI:**
+
+  ```
+  http://localhost:3000/api-docs
+  ```
+
+  This provides an interactive Swagger UI for testing the API.
+
+- **OpenAPI JSON Specification:**
+
+  ```
+  http://localhost:3000/swagger.json
+  ```
+
+  This provides the OpenAPI specification in JSON format.
+
+### Deployed Endpoints:
 
 - **Test the API:**
 
@@ -163,9 +202,11 @@ API documentation is generated using OpenAPI/Swagger. Use the following endpoint
   This provides an interactive Swagger UI for testing the API.
 
 - **OpenAPI JSON Specification:**
+
   ```
   https://<your-api-id>.execute-api.<region>.amazonaws.com/prod/swagger.json
   ```
+
   This provides the OpenAPI specification in JSON format.
 
 ---
