@@ -1,0 +1,21 @@
+{
+  "name": "aws-lambda-greeter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/darshikaGilder30/aws-lambda-greeter.git",
+  "author": "Darshika Gilder <darshi3011@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.2.0"
+  }
+}

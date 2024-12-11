@@ -1,0 +1,12 @@
+node_modules
+# Ignore JavaScript and TypeScript build artifacts
+packages/infrastructure/*.js
+!packages/infrastructure/jest.config.js
+packages/infrastructure/*.d.ts
+
+# Ignore node_modules in the infrastructure package
+packages/infrastructure/node_modules
+
+# Ignore CDK output directories in the infrastructure package
+packages/infrastructure/.cdk.staging
+packages/infrastructure/cdk.out
