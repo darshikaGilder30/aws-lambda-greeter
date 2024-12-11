@@ -56,11 +56,13 @@ This project implements a TypeScript monorepo using Yarn, which contains a Lambd
 
 ```
 /aws-lambda-greeter
-  /lambda-function # Lambda function code
-  /infrastructure  # AWS infrastructure (CDK)
-  /package.json     # Monorepo dependencies
-  /yarn.lock        # Yarn lock file
-  /README.md        # This file
+  /packages
+    /lambda-function # Lambda function code
+    /infrastructure  # AWS infrastructure (CDK)
+  /package.json       # Monorepo dependencies
+  /yarn.lock          # Yarn lock file
+  /README.md          # This file
+
 ```
 
 ---
