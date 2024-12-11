@@ -61,7 +61,7 @@ This project implements a TypeScript monorepo using Yarn, which contains a Lambd
     /infrastructure  # AWS infrastructure (CDK)
   /package.json       # Monorepo dependencies
   /yarn.lock          # Yarn lock file
-  /README.md          # This file
+  /README.md          # Read-me file
 
 ```
 
