@@ -130,7 +130,7 @@ To deploy the Lambda function and related infrastructure to AWS:
 
 - **Deploy with AWS CDK**
   ```bash
-  yarn deploy
+  cdk deploy
   ```
   This deploys the Lambda function, API Gateway, and other resources to AWS. After deployment, the API Gateway URL will be provided for testing.
 
