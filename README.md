@@ -143,13 +143,13 @@ API documentation is generated using OpenAPI/Swagger. Use the following endpoint
 - **Test the API:**
 
   ```
-  https://w7hzr1zmui.execute-api.ap-south-1.amazonaws.com/prod/hello?name=John
+  https://<your-api-id>.execute-api.<region>.amazonaws.com/prod/hello?name=John
   ```
 
   This will respond with `Hello, John`.
 
   ```
-  https://w7hzr1zmui.execute-api.ap-south-1.amazonaws.com/prod/hello
+  https://<your-api-id>.execute-api.<region>.amazonaws.com/prod/hello
   ```
 
   This will respond with `Hello, World`.
@@ -157,14 +157,14 @@ API documentation is generated using OpenAPI/Swagger. Use the following endpoint
 - **Swagger UI:**
 
   ```
-  https://w7hzr1zmui.execute-api.ap-south-1.amazonaws.com/prod/api-docs
+  https://<your-api-id>.execute-api.<region>.amazonaws.com/prod/api-docs
   ```
 
   This provides an interactive Swagger UI for testing the API.
 
 - **OpenAPI JSON Specification:**
   ```
-  https://w7hzr1zmui.execute-api.ap-south-1.amazonaws.com/prod/swagger.json
+  https://<your-api-id>.execute-api.<region>.amazonaws.com/prod/swagger.json
   ```
   This provides the OpenAPI specification in JSON format.
 
@@ -177,7 +177,7 @@ API documentation is generated using OpenAPI/Swagger. Use the following endpoint
 To deploy the Lambda function and API Gateway using AWS CDK:
 
 ```bash
-yarn deploy
+cdk deploy
 ```
 
 ### 2. Access the API
